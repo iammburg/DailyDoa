@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color Palette */
+:root {
+    --color-abyss: #031602;
+    --color-shadow: #1D2A25;
+    --color-jungle: #3B5249;
+    --color-neutral: #899692;
+    --color-cream: #F6EFE6;
+    --color-lemon: #F9E559;
+    --color-rust: #C14A09;
+}
+
+/* body {
+    color: var(--color-cream);
+    font-family: Cardo, sans-serif;
+} */
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 16px;
+    padding-left: 16px;
+}
