@@ -1,35 +1,30 @@
-import bg_image from "../assets/images/bg.png";
 import hero_image from "../assets/images/hero-image.webp";
 import { Typography, Button } from "@material-tailwind/react";
+import "../styles/hero.css";
 
 export default function Hero() {
   return (
     <div className="hero w-full">
-      <div
-        className="hero__container max-w-screen-xxl mx-auto flex h-[526px] items-center justify-center gap-14 px-7 py-7"
-        style={{
-          backgroundImage: `url(${bg_image})`,
-        }}
-      >
+      <div className="hero__container mx-auto flex h-[526px] max-w-screen-xxl flex-wrap items-center justify-center gap-7 px-7 py-7 md:gap-16">
         <div className="hero-image__container w-[430] rounded-[32px] bg-white p-4">
           <img
             src={hero_image}
             alt="Doa"
             width={430}
-            className="rounded-[24px]"
+            className="hero-image rounded-[24px]"
           />
         </div>
         <div className="hero-text__container">
           <Typography
             variant="h1"
-            className="font-cardo leading-none text-color-abyss"
+            className="text-center font-cardo text-4xl leading-none text-color-abyss lg:text-start xl:text-5xl"
           >
             Temukan <br />
             Doa Harian Anda
           </Typography>
           <Typography
             variant="paragraph"
-            className="font-amiri mt-3 text-2xl leading-none text-color-abyss"
+            className="mt-3 text-center font-amiri text-xl leading-none text-color-abyss lg:text-start xl:text-2xl"
           >
             Kumpulan doa harian lengkap dengan hadist <br /> serta fitur unduh
             dan pencarian yang memudahkan.

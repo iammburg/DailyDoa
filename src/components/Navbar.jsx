@@ -18,7 +18,7 @@ export function StickyNavbar() {
   }, []);
 
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:justify-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
@@ -54,7 +54,7 @@ export function StickyNavbar() {
 
   return (
     <div className="flex items-center justify-center">
-      <Navbar className="max-w-screen-xxl sticky top-0 z-10 h-max rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="sticky top-0 z-10 h-max max-w-screen-xxl rounded-none px-4 py-2 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"

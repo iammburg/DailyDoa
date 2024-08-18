@@ -1,0 +1,22 @@
+.hero__container{
+    background-image: url('/src/assets/images/bg.png');
+}
+
+@media (max-width: 1070px) {
+    .hero-image{
+        width: 360px;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero__container {
+        background-image: none;
+        flex-direction: row !important;
+    }
+    .hero-image__container{
+        background-color: var(--color-rust);
+    }
+    .button__group{
+        flex-direction: column !important;
+    }
+}
