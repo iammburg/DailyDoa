@@ -1,5 +1,11 @@
 .hero__container{
-    background-image: url('/src/assets/images/bg.png');
+    /* background-image: url('/src/assets/images/bg.png'); */
+    /* background: linear-gradient(to right, #1D2A25 0%, #F9E559 30%, #FFFFFF 60%); */
+    background-color: hsla(0, 0%, 100%, 1);
+    background-image:
+    radial-gradient(at 98% 100%, hsla(51, 93%, 66%, 0.43) 0px, transparent 50%),
+    radial-gradient(at 18% 94%, hsla(51, 93%, 66%, 0.76) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(156, 18%, 13%, 0.61) 0px, transparent 50%);
 }
 
 @media (max-width: 1070px) {
@@ -10,7 +16,7 @@
 
 @media (max-width: 960px) {
     .hero__container {
-        background-image: none;
+        /* background-image: none; */
         flex-direction: row !important;
     }
     .hero-image__container{
