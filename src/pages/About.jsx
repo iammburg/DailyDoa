@@ -1,6 +1,7 @@
 import { Typography } from "@material-tailwind/react";
 import { SimpleCard } from "../components/Card";
 import "../styles/about.css";
+import pattern from "../assets/images/pattern.svg";
 
 export default function About() {
   return (
@@ -40,6 +41,9 @@ export default function About() {
             buttonName={`Referensi`}
           />
         </div>
+      </div>
+      <div className="about__pattern mx-auto mt-28 max-w-screen-xxl p-0">
+        <img src={pattern} alt="pattern" />
       </div>
     </div>
   );
