@@ -36,7 +36,7 @@ export function StickyNavbar() {
         className="p-1 font-cardo text-lg font-normal"
       >
         <a href="#" className="flex items-center">
-          Daftar Doa
+          Fitur
         </a>
       </Typography>
       <Typography
@@ -46,7 +46,7 @@ export function StickyNavbar() {
         className="p-1 font-cardo text-lg font-normal"
       >
         <a href="#" className="flex items-center">
-          Fitur
+          Daftar Doa
         </a>
       </Typography>
     </ul>

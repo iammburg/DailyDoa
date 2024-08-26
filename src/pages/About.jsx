@@ -1,12 +1,11 @@
 import { Typography } from "@material-tailwind/react";
 import { SimpleCard } from "../components/Card";
-import "../styles/about.css";
 import pattern from "../assets/images/pattern.svg";
 
 export default function About() {
   return (
     <div className="about mb-10 mt-10 w-full">
-      <div className="about__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center lg:pt-8">
+      <div className="about__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center !px-6 lg:pt-8">
         <div className="about__text flex flex-col items-center justify-center lg:px-16">
           <Typography
             variant="h2"
@@ -24,7 +23,7 @@ export default function About() {
             kedamaian batin.
           </Typography>
         </div>
-        <div className="about__card mt-10 flex flex-col items-center justify-center gap-6 md:flex-row md:flex-wrap md:items-start md:gap-9 lg:gap-16">
+        <div className="about__card mt-10 flex flex-col items-center justify-center gap-6 !px-6 md:flex-row md:flex-wrap md:items-start md:gap-9 lg:gap-16">
           <SimpleCard
             cardHeader={`Dari An-Nu'man bin Basyir-raḍiyallāhu'anhu:`}
             cardContent={`Nabi (ﷺ) bersabda, 'Doa (permohonan) adalah ibadah.'`}
