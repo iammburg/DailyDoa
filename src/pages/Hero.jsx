@@ -6,12 +6,12 @@ export default function Hero() {
   return (
     <div className="hero w-full">
       <div className="hero__container mx-auto flex h-full max-w-screen-xxl flex-wrap items-center justify-center gap-7 px-7 pb-24 pt-16 md:gap-16">
-        <div className="hero-image__container w-[430] rounded-[32px] bg-white p-4 shadow-2xl">
+        <div className="hero-image__container w-[430] rounded-[28px] bg-white p-3 shadow-2xl">
           <img
             src={hero_image}
             alt="Doa"
             width={430}
-            className="hero-image rounded-[24px]"
+            className="hero-image rounded-2xl"
           />
         </div>
         <div className="hero-text__container">
