@@ -12,7 +12,7 @@ export function SimpleCard({ cardHeader, cardContent, buttonName }) {
       <CardBody>
         <Typography
           variant="h5"
-          color="blue-gray"
+          color="black"
           className="mb-2 text-center font-cardo"
         >
           {cardHeader}
