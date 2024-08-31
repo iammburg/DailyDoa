@@ -46,14 +46,14 @@ export function DoaTab() {
           </Tab>
         ))}
       </TabsHeader>
-      <TabsBody className="p-0">
+      <TabsBody className="w-full p-0">
         {loading && (
           <div className="mt-4 font-amiri text-xl font-medium">
             Memuat Doa...
           </div>
         )}
         {error && (
-          <div className="text-red-700">{`Error menampilkan data doa: ${error}`}</div>
+          <div className="mt-4 font-amiri text-xl font-medium text-red-700">{`Error menampilkan data doa: ${error}`}</div>
         )}
 
         {tabData.map(({ value }) => (
@@ -64,8 +64,15 @@ export function DoaTab() {
           >
             {value === "daftar-doa" &&
               data &&
-              data.map(({ id, judul }) => (
-                <DoaCard key={id} id={id} judul={judul} />
+              data.map(({ id, judul, latin, arab, terjemah }) => (
+                <DoaCard
+                  key={id}
+                  id={id}
+                  judul={judul}
+                  latin={latin}
+                  arab={arab}
+                  terjemah={terjemah}
+                />
               ))}
             {value === "bookmark" && (
               <div className="font-cardo font-bold">
