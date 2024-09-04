@@ -34,18 +34,28 @@ export default function Feature() {
         <div className="feature-list__wrapper !px-6 md:!px-20">
           <div className="feature-list__container mt-14 flex max-w-screen-xxl flex-col flex-wrap items-center justify-center overflow-hidden rounded-3xl bg-color-shadow shadow-2xl lg:flex-row">
             <div className="feature__image w-full">
-              <img src={pray} alt="Pray" className="w-full object-cover" />
+              <a
+                a
+                href="https://www.freepik.com/free-photo/man-praying-alone-divinity-home_11303966.htm#fromView=search&page=2&position=3&uuid=063897be-a758-4bfa-8774-4d4447b4e2d5"
+                target="_blank"
+              >
+                <img
+                  src={pray}
+                  alt="Pray, Image by freepik"
+                  className="w-full object-cover"
+                />
+              </a>
             </div>
             <div className="feature__text p-8">
               <Typography
                 variant="h3"
-                className="mt-3 text-center font-cardo text-base leading-none text-white xl:text-xl"
+                className="mt-3 text-center font-cardo text-base leading-none text-color-cream xl:text-xl"
               >
                 23 Kumpulan Doa Sehari-hari
               </Typography>
               <Typography
                 variant="paragraph"
-                className="mt-3 text-center font-amiri font-thin leading-none text-white xl:text-xl"
+                className="mt-3 text-center font-amiri font-thin leading-none text-color-cream xl:text-xl"
               >
                 Tersedia berbagai pilihan doa untuk diamalkan pada aktivitas
                 sehari-hari Anda. Mulai dari Doa Bangun Tidur, Doa Keluar Rumah,
@@ -122,7 +132,13 @@ export default function Feature() {
               </Card>
             </div>
             <div className="feature__image w-full">
-              <img src={quran} alt="Al-Quran" className="w-full object-cover" />
+              <a href="https://www.freepik.com/free-photo/top-view-islamic-new-year-with-quran-book_9259562.htm#fromView=search&page=1&position=10&uuid=3bdb22e6-1f5a-4d8e-b3fb-b5fe5aa3a39d">
+                <img
+                  src={quran}
+                  alt="Al-Quran, Image by freepik"
+                  className="w-full object-cover"
+                />
+              </a>
             </div>
           </div>
         </div>

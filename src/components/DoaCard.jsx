@@ -43,33 +43,54 @@ export function DoaCard({ id, judul, latin, arab, terjemah }) {
       </Card>
 
       {/* Modal Dialog */}
-      <Dialog open={open} handler={handleOpen}>
+      <Dialog open={open} handler={handleOpen} className="p-5">
         <DialogHeader className="font-cardo">
           {id}. {judul}
         </DialogHeader>
         <DialogBody>
-          <Typography variant="lead" className="font-amiri">
+          <Typography
+            variant="lead"
+            className="text-right font-amiri text-black"
+          >
             {arab}
           </Typography>
           <br />
-          <Typography variant="paragraph" className="mb-2 font-cardo italic">
+          <Typography
+            variant="paragraph"
+            className="mb-2 font-cardo italic text-black"
+          >
             {latin}
           </Typography>
-          <Typography variant="paragraph" className="font-cardo font-semibold">
+          <Typography
+            variant="paragraph"
+            className="font-cardo font-semibold text-black"
+          >
             "{terjemah}"
           </Typography>
         </DialogBody>
         <DialogFooter>
           <Button
-            variant="text"
+            variant="outlined"
             color="red"
             onClick={handleOpen}
-            className="mr-1"
+            className="mx-1 my-1 font-cardo"
+            size="sm"
           >
-            <span>Cancel</span>
+            <span>Tutup</span>
           </Button>
-          <Button variant="gradient" color="green" onClick={handleOpen}>
-            <span>Confirm</span>
+          <Button
+            onClick={handleOpen}
+            className="mx-1 my-1 bg-color-rust font-cardo"
+            size="sm"
+          >
+            <span>Unduh</span>
+          </Button>
+          <Button
+            onClick={handleOpen}
+            className="mx-1 my-1 bg-color-jungle font-cardo"
+            size="sm"
+          >
+            <span>Bookmark</span>
           </Button>
         </DialogFooter>
       </Dialog>
