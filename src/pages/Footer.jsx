@@ -15,8 +15,8 @@ import {
 export default function Footer() {
   return (
     <div className="footer w-full">
-      <div className="mx-auto flex max-w-screen-xxl flex-wrap items-center justify-center gap-7 bg-color-shadow px-7 pb-24 pt-16">
-        <div className="footer__contact container flex flex-col items-center justify-between p-2">
+      <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 lg:flex-row">
+        <div className="footer__contact flex flex-col items-center justify-between p-2 lg:items-start lg:justify-start">
           <div className="mb-8 flex flex-row items-center justify-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Footer() {
 
         {/*  */}
 
-        <div className="footer__contact container flex flex-col items-center justify-center p-2">
+        <div className="footer__form flex flex-col items-center justify-center p-2">
           <div className="mb-8 flex flex-col items-center justify-center gap-2">
             <h4 className="text-center font-cardo text-xl font-bold text-color-cream">
               Tertarik Bekerja Bersama?
@@ -117,8 +117,8 @@ export default function Footer() {
             </p>
           </div>
 
-          <Card className="bg-color-cream p-5" shadow={true}>
-            <form className="mb-2 w-full sm:w-96">
+          <Card className="w-full max-w-md bg-color-cream p-5" shadow={false}>
+            <form className="mb-2 w-full">
               <div className="mb-1 flex flex-col gap-6">
                 <Typography
                   variant="h6"
@@ -145,7 +145,10 @@ export default function Footer() {
                 </Typography>
                 <Textarea label="Masukkan Pesan" />
               </div>
-              <Button className="mt-6 bg-color-jungle" fullWidth>
+              <Button
+                className="mt-6 bg-color-jungle font-cardo font-bold"
+                fullWidth
+              >
                 KIRIM
               </Button>
             </form>
