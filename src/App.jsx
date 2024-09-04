@@ -4,6 +4,7 @@ import Hero from "./pages/Hero";
 import About from "./pages/About";
 import Feature from "./pages/Feature";
 import DoaList from "./pages/DoaList";
+import Footer from "./pages/Footer";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <DoaList />
       </QueryClientProvider>
+      <Footer />
     </>
   );
 }
