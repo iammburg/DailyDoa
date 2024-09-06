@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import {
   faInstagramSquare,
   faGithubSquare,
@@ -15,8 +16,8 @@ import {
 export default function Footer() {
   return (
     <div className="footer w-full">
-      <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 lg:flex-row">
-        <div className="footer__contact flex flex-col items-center justify-between p-2 lg:items-start lg:justify-start">
+      <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 lg:flex-row lg:justify-around">
+        <div className="footer__contact flex flex-col items-center justify-between gap-5 p-2 lg:items-start lg:justify-between">
           <div className="mb-8 flex flex-row items-center justify-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,80 +36,81 @@ export default function Footer() {
             </h4>
           </div>
 
-          <div className="mb-7 flex flex-col items-center justify-center gap-1">
+          <div className="mb-7 flex flex-col items-center justify-center gap-1 lg:items-start lg:justify-start">
             <h4 className="font-cardo text-xl font-bold text-color-cream">
               Hubungi Saya
             </h4>
 
-            <span className="">
-              <i className="fa-solid fa-envelope flex flex-row items-center justify-center gap-2 text-color-cream">
-                <h5 className="font-amiri text-lg font-normal text-color-cream">
-                  <a href="mailto:ilhamprabowo009@gmail.com" target="_blank">
-                    ilhamprabowo009@gmail.com
-                  </a>
-                </h5>
-              </i>
+            <span className="flex flex-row items-center justify-center gap-2">
+              <FontAwesomeIcon
+                icon={faEnvelopeSquare}
+                className="text-color-cream"
+                size="lg"
+              />
+              <h5 className="font-amiri text-lg text-color-cream">
+                <a href="mailto:ilhamprabowo009@gmail.com" target="_blank">
+                  ilhamprabowo009@gmail.com
+                </a>
+              </h5>
             </span>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-1">
+          <div className="flex flex-col items-center justify-center gap-1 lg:items-start lg:justify-start">
             <h4 className="font-cardo text-xl font-bold text-color-cream">
               Media Sosial
             </h4>
 
-            <div className="flex flex-col items-center justify-center gap-1">
-              <span className="flex flex-row items-center justify-center gap-2">
-                <FontAwesomeIcon
-                  icon={faInstagramSquare}
-                  className="text-color-cream"
-                  size="lg"
-                />
-                <h5 className="font-amiri text-lg text-color-cream">
-                  <a
-                    href="https://www.instagram.com/outsidemywall/"
-                    target="_blank"
-                  >
-                    @outsidemywall
-                  </a>
-                </h5>
-              </span>
+            <span className="flex flex-row items-center justify-center gap-2">
+              <FontAwesomeIcon
+                icon={faInstagramSquare}
+                className="text-color-cream"
+                size="lg"
+              />
+              <h5 className="font-amiri text-lg text-color-cream">
+                <a
+                  href="https://www.instagram.com/outsidemywall/"
+                  target="_blank"
+                >
+                  @outsidemywall
+                </a>
+              </h5>
+            </span>
 
-              <span className="flex flex-row items-center justify-center gap-2">
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  className="text-color-cream"
-                  size="lg"
-                />
-                <h5 className="font-amiri text-lg text-color-cream">
-                  <a href="https://github.com/iammburg" target="_blank">
-                    iammburg
-                  </a>
-                </h5>
-              </span>
+            <span className="flex flex-row items-center justify-center gap-2">
+              <FontAwesomeIcon
+                icon={faGithubSquare}
+                className="text-color-cream"
+                size="lg"
+              />
+              <h5 className="font-amiri text-lg text-color-cream">
+                <a href="https://github.com/iammburg" target="_blank">
+                  iammburg
+                </a>
+              </h5>
+            </span>
 
-              <span className="flex flex-row items-center justify-center gap-2">
-                <FontAwesomeIcon
-                  icon={faYoutubeSquare}
-                  className="text-color-cream"
-                  size="lg"
-                />
-                <h5 className="font-amiri text-lg text-color-cream">
-                  <a
-                    href="https://www.youtube.com/@ndarucompiler"
-                    target="_blank"
-                  >
-                    ndarucompiler
-                  </a>
-                </h5>
-              </span>
-            </div>
+            <span className="flex flex-row items-center justify-center gap-2">
+              <FontAwesomeIcon
+                icon={faYoutubeSquare}
+                className="text-color-cream"
+                size="lg"
+              />
+              <h5 className="font-amiri text-lg text-color-cream">
+                <a
+                  href="https://www.youtube.com/@ndarucompiler"
+                  target="_blank"
+                >
+                  ndarucompiler
+                </a>
+              </h5>
+            </span>
           </div>
         </div>
 
         {/*  */}
 
-        <div className="footer__form flex flex-col items-center justify-center p-2">
-          <div className="mb-8 flex flex-col items-center justify-center gap-2">
+        <div className="footer__form flex flex-col items-center justify-center p-2 lg:items-start lg:justify-start">
+          <div className="mb-8 flex flex-col items-center justify-center gap-2 lg:items-start lg:justify-start">
             <h4 className="text-center font-cardo text-xl font-bold text-color-cream">
               Tertarik Bekerja Bersama?
             </h4>
