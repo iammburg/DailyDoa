@@ -16,7 +16,7 @@ import {
 export default function Footer() {
   return (
     <div className="footer w-full">
-      <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 lg:flex-row lg:justify-around">
+      <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 sm:pb-10 sm:pt-8 md:pb-16 md:pt-10 lg:flex-row lg:justify-around">
         <div className="footer__contact flex flex-col items-center justify-between gap-5 p-2 lg:items-start lg:justify-between">
           <div className="mb-8 flex flex-row items-center justify-center gap-2">
             <svg
@@ -44,7 +44,7 @@ export default function Footer() {
             <span className="flex flex-row items-center justify-center gap-2">
               <FontAwesomeIcon
                 icon={faEnvelopeSquare}
-                className="text-color-cream"
+                className="text-lg text-color-cream md:text-xl lg:text-2xl"
                 size="lg"
               />
               <h5 className="font-amiri text-lg text-color-cream">
@@ -63,7 +63,7 @@ export default function Footer() {
             <span className="flex flex-row items-center justify-center gap-2">
               <FontAwesomeIcon
                 icon={faInstagramSquare}
-                className="text-color-cream"
+                className="text-lg text-color-cream md:text-xl lg:text-2xl"
                 size="lg"
               />
               <h5 className="font-amiri text-lg text-color-cream">
@@ -79,7 +79,7 @@ export default function Footer() {
             <span className="flex flex-row items-center justify-center gap-2">
               <FontAwesomeIcon
                 icon={faGithubSquare}
-                className="text-color-cream"
+                className="text-lg text-color-cream md:text-xl lg:text-2xl"
                 size="lg"
               />
               <h5 className="font-amiri text-lg text-color-cream">
@@ -92,7 +92,7 @@ export default function Footer() {
             <span className="flex flex-row items-center justify-center gap-2">
               <FontAwesomeIcon
                 icon={faYoutubeSquare}
-                className="text-color-cream"
+                className="text-lg text-color-cream md:text-xl lg:text-2xl"
                 size="lg"
               />
               <h5 className="font-amiri text-lg text-color-cream">
@@ -119,7 +119,10 @@ export default function Footer() {
             </p>
           </div>
 
-          <Card className="w-full max-w-md bg-color-cream p-5" shadow={false}>
+          <Card
+            className="w-full max-w-md bg-color-cream p-5 md:w-3/4"
+            shadow={false}
+          >
             <form className="mb-2 w-full">
               <div className="mb-1 flex flex-col gap-6">
                 <Typography
@@ -155,6 +158,28 @@ export default function Footer() {
               </Button>
             </form>
           </Card>
+          <p className="mt-8 text-center font-cardo text-base text-color-cream lg:text-left">
+            Web created & designed by{" "}
+            <a
+              href="https://github.com/iammburg"
+              target="_blank"
+              className="text-color-rust"
+            >
+              iammburg
+            </a>{" "}
+            <br />
+            and doa data was provided by{" "}
+            <a
+              href="https://santrikoding.com/"
+              target="_blank"
+              className="text-color-rust"
+            >
+              SantriKoding.com
+            </a>
+            .
+            <br />
+            Copyright &copy; 2024 iammburg&trade;. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
