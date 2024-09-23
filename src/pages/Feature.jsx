@@ -12,7 +12,7 @@ import {
 
 export default function Feature() {
   return (
-    <div className="feature mb-10 mt-20 w-full">
+    <div className="feature mb-10 mt-20 w-full" id="feature">
       <div className="feature__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center !px-6 lg:pt-8">
         <div className="feature__text flex flex-col items-center justify-center lg:px-16">
           <Typography

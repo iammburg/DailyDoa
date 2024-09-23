@@ -25,7 +25,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-cardo text-lg font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#about" className="flex items-center">
           Hadist Terkait
         </a>
       </Typography>
@@ -35,7 +35,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-cardo text-lg font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#feature" className="flex items-center">
           Fitur
         </a>
       </Typography>
@@ -45,7 +45,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-cardo text-lg font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#doa-list" className="flex items-center">
           Daftar Doa
         </a>
       </Typography>
@@ -84,7 +84,9 @@ export function StickyNavbar() {
                 size="md"
                 className="hidden bg-color-jungle lg:inline-block"
               >
-                <span>Kontak</span>
+                <span>
+                  <a href="#contact">Kontak</a>
+                </span>
               </Button>
             </div>
             <IconButton

@@ -31,10 +31,14 @@ export default function Hero() {
           </Typography>
           <div className="button__group mt-5 flex gap-3">
             <Button size="md" className="bg-color-jungle px-10">
-              <span>Mulai</span>
+              <span>
+                <a href="#about">Mulai</a>
+              </span>
             </Button>
             <Button size="md" variant="outlined">
-              <span className="text-color-abyss">Selengkapnya</span>
+              <span className="text-color-abyss">
+                <a href="#doa-list">Selengkapnya</a>
+              </span>
             </Button>
           </div>
         </div>

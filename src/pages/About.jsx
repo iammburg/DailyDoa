@@ -4,7 +4,7 @@ import pattern from "../assets/images/pattern.svg";
 
 export default function About() {
   return (
-    <div className="about mb-10 mt-10 w-full">
+    <div className="about mb-10 mt-10 w-full" id="about">
       <div className="about__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center !px-6 lg:pt-8">
         <div className="about__text flex flex-col items-center justify-center lg:px-16">
           <Typography
