@@ -15,7 +15,7 @@ import {
 
 export default function Footer() {
   return (
-    <div className="footer w-full">
+    <div className="footer w-full" id="contact">
       <div className="footer__container container mx-auto flex max-w-screen-xxl flex-col items-center justify-center gap-7 rounded-t-[60px] bg-color-shadow px-7 pb-24 pt-16 sm:pb-10 sm:pt-8 md:pb-16 md:pt-10 lg:flex-row lg:justify-around">
         <div className="footer__contact flex flex-col items-center justify-between gap-5 p-2 lg:items-start lg:justify-between">
           <div className="mb-8 flex flex-row items-center justify-center gap-2">
@@ -158,7 +158,7 @@ export default function Footer() {
               </Button>
             </form>
           </Card>
-          <p className="mt-8 text-center font-cardo text-base text-color-cream lg:text-left">
+          <p className="mt-8 text-center font-cardo text-xs text-color-cream lg:text-left">
             Web created & designed by{" "}
             <a
               href="https://github.com/iammburg"
