@@ -13,10 +13,9 @@
     --color-rust: #C14A09;
 }
 
-/* body {
-    color: var(--color-cream);
-    font-family: Cardo, sans-serif;
-} */
+html {
+    scroll-behavior: smooth;
+}
 
 .container {
     width: 100%;

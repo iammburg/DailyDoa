@@ -18,12 +18,15 @@ export function DoaCard({ id, judul, latin, arab, terjemah }) {
 
   return (
     <>
-      <Card className="w-[390px] rounded-md border border-color-jungle shadow-2xl">
+      <Card
+        className="w-[390px] cursor-pointer rounded-md border border-color-jungle shadow-2xl duration-500 ease-in-out hover:bg-gray-300"
+        onClick={handleOpen}
+      >
         <CardBody className="flex flex-row items-center justify-between p-5">
           <Typography variant="h5" color="black" className="font-cardo">
             {id}. {judul}
           </Typography>
-          <IconButton variant="text" onClick={handleOpen}>
+          <IconButton variant="text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
