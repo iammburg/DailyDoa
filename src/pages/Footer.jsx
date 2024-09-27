@@ -151,7 +151,7 @@ export default function Footer() {
                 <Textarea label="Masukkan Pesan" />
               </div>
               <Button
-                className="mt-6 bg-color-jungle font-cardo font-bold"
+                className="mt-6 bg-color-jungle  font-bold"
                 fullWidth
               >
                 KIRIM
